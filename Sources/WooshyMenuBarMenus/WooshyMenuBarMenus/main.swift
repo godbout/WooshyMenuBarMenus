@@ -1,1 +1,5 @@
-/Users/guill/Development/WooshyWindowToTheForeground/Sources/WooshyWindowToTheForeground/Workflow
+print(
+    Workflow.next() == "do"
+        ? Workflow.do()
+        : Workflow.menu()
+)

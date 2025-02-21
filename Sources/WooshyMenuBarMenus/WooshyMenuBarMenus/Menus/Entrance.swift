@@ -1,8 +1,24 @@
-//
-//  Entrance.swift
-//  WooshyMenuBarMenus
-//
-//  Created by Guillaume Leclerc on 21/02/2025.
-//
+import AlfredWorkflowScriptFilter
 
-import Foundation
+
+class Entrance {
+    static let shared = Entrance()
+    
+    private init() {}
+    
+    
+    static func scriptFilter() -> String {
+        results()
+    }
+        
+}
+
+
+extension Entrance {
+    
+    private static func results() -> String {
+        ScriptFilter.add(Item(title: "hehe"))
+        
+        return ScriptFilter.output()
+    }
+}

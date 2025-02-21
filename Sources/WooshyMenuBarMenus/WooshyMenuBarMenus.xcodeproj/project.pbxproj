@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9191A72C2D689F280088BC60 /* AlfredWorkflowScriptFilter in Frameworks */ = {isa = PBXBuildFile; productRef = 9191A72B2D689F280088BC60 /* AlfredWorkflowScriptFilter */; };
+		9191A7502D689FCF0088BC60 /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191A74A2D689FCF0088BC60 /* Entrance.swift */; };
+		9191A7512D689FCF0088BC60 /* Workflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191A74C2D689FCF0088BC60 /* Workflow.swift */; };
+		9191A7522D689FCF0088BC60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191A74E2D689FCF0088BC60 /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9191A71C2D689BC10088BC60 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,21 +27,17 @@
 
 /* Begin PBXFileReference section */
 		9191A71E2D689BC10088BC60 /* WooshyMenuBarMenus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WooshyMenuBarMenus; sourceTree = BUILT_PRODUCTS_DIR; };
+		9191A74A2D689FCF0088BC60 /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
+		9191A74C2D689FCF0088BC60 /* Workflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workflow.swift; sourceTree = "<group>"; };
+		9191A74E2D689FCF0088BC60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		9191A7202D689BC10088BC60 /* WooshyMenuBarMenus */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WooshyMenuBarMenus;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9191A71B2D689BC10088BC60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9191A72C2D689F280088BC60 /* AlfredWorkflowScriptFilter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +47,7 @@
 		9191A7152D689BC10088BC60 = {
 			isa = PBXGroup;
 			children = (
-				9191A7202D689BC10088BC60 /* WooshyMenuBarMenus */,
+				9191A74F2D689FCF0088BC60 /* WooshyMenuBarMenus */,
 				9191A71F2D689BC10088BC60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +58,32 @@
 				9191A71E2D689BC10088BC60 /* WooshyMenuBarMenus */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9191A74B2D689FCF0088BC60 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				9191A74A2D689FCF0088BC60 /* Entrance.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+		9191A74D2D689FCF0088BC60 /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				9191A74C2D689FCF0088BC60 /* Workflow.swift */,
+			);
+			path = Workflow;
+			sourceTree = "<group>";
+		};
+		9191A74F2D689FCF0088BC60 /* WooshyMenuBarMenus */ = {
+			isa = PBXGroup;
+			children = (
+				9191A74E2D689FCF0088BC60 /* main.swift */,
+				9191A74B2D689FCF0088BC60 /* Menus */,
+				9191A74D2D689FCF0088BC60 /* Workflow */,
+			);
+			path = WooshyMenuBarMenus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,11 +101,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				9191A7202D689BC10088BC60 /* WooshyMenuBarMenus */,
-			);
 			name = WooshyMenuBarMenus;
 			packageProductDependencies = (
+				9191A72B2D689F280088BC60 /* AlfredWorkflowScriptFilter */,
 			);
 			productName = WooshyMenuBarMenus;
 			productReference = 9191A71E2D689BC10088BC60 /* WooshyMenuBarMenus */;
@@ -106,6 +133,9 @@
 			);
 			mainGroup = 9191A7152D689BC10088BC60;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9191A72A2D689F280088BC60 /* XCRemoteSwiftPackageReference "AlfredWorkflowScriptFilter" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9191A71F2D689BC10088BC60 /* Products */;
 			projectDirPath = "";
@@ -121,6 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9191A7502D689FCF0088BC60 /* Entrance.swift in Sources */,
+				9191A7512D689FCF0088BC60 /* Workflow.swift in Sources */,
+				9191A7522D689FCF0088BC60 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +324,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9191A72A2D689F280088BC60 /* XCRemoteSwiftPackageReference "AlfredWorkflowScriptFilter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:godbout/AlfredWorkflowScriptFilter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9191A72B2D689F280088BC60 /* AlfredWorkflowScriptFilter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9191A72A2D689F280088BC60 /* XCRemoteSwiftPackageReference "AlfredWorkflowScriptFilter" */;
+			productName = AlfredWorkflowScriptFilter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9191A7162D689BC10088BC60 /* Project object */;
 }
